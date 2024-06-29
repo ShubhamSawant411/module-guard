@@ -1,0 +1,48 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    align-self: center;
+    /* width: 80%; */
+    border-radius: 0px 0px 20px 20px;
+    margin: 0px 10%;
+    padding: 0px 10px;
+    height: 10vh;
+
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ul li{
+    list-style: none;
+    color: rgb(48, 48, 48);
+    margin-right: 15px;
+    font-family: "Playwrite US Modern", cursive;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    transition: 0.7s all;
+
+}
+ul li:hover {
+    color: antiquewhite;
+    cursor: pointer;
+}
+ul li:active {
+    font-size: 1.23rem;
+    color: rgb(49, 49, 49);    
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+    color: antiquewhite;
+}
+
+/* ui li{
+
+} */

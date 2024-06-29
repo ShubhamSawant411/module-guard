@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": "52a3",
+      "username": "brijesh",
+      "password": "1234567",
+      "role": "admin"
+    },
+    {
+      "id": "f1ff",
+      "username": "shubham",
+      "password": "1234",
+      "role": "supervisor"
+    },
+    {
+      "id": "7e9b",
+      "username": "mayur",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "id": "9927",
+      "username": "akshay",
+      "password": "1234",
+      "role": "admin"
+    }
+  ],
+  "category": []
+}

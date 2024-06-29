@@ -1,0 +1,9 @@
+<div class="main">
+    <div class="pro" *ngFor="let pro of products">
+        <h2>id: {{pro.id}}</h2>
+        <h3>{{pro.name}}</h3>
+        <h5>price: {{pro.price | currency:'INR':'symbol':'1.0-0'}}</h5>
+        <h5 class="category">{{pro.category}}</h5>
+        <p>{{pro.description}}</p>
+    </div>
+</div>

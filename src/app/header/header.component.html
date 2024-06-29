@@ -1,0 +1,12 @@
+<nav>
+    <div class="logo">
+        <img src="../../assets/logo.svg" alt="logo">
+    </div>
+    <ul>
+        <li *ngIf="!isLogin" routerLink="/login" >Login</li>
+        
+        <li *ngIf="isLogin" (click)="logout()" >Logout</li>
+        
+        <li *ngIf="!isLogin" routerLink="/register">Register</li>
+    </ul>
+</nav>

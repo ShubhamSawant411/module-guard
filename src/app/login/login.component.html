@@ -1,0 +1,7 @@
+<div>
+    <form (ngSubmit)="loginUser(username.value, password.value)">
+        <input type="text" placeholder="username" #username required autocomplete="username">
+        <input type="password" placeholder="password" #password required autocomplete="current-password">
+        <button type="submit">Login</button>
+    </form>
+</div>

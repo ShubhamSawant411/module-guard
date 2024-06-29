@@ -1,0 +1,62 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-product',
+  templateUrl: './product.component.html',
+  styleUrls: ['./product.component.css']
+})
+export class ProductComponent {
+   products = [
+    { id: 1, name: 'Product 1', description: 'Description for product 1', price: 10.00, category: 'Category 1' },
+    { id: 2, name: 'Product 2', description: 'Description for product 2', price: 20.00, category: 'Category 2' },
+    { id: 3, name: 'Product 3', description: 'Description for product 3', price: 30.00, category: 'Category 3' },
+    { id: 4, name: 'Product 4', description: 'Description for product 4', price: 40.00, category: 'Category 4' },
+    { id: 5, name: 'Product 5', description: 'Description for product 5', price: 50.00, category: 'Category 5' },
+    { id: 6, name: 'Product 6', description: 'Description for product 6', price: 60.00, category: 'Category 6' },
+    { id: 7, name: 'Product 7', description: 'Description for product 7', price: 70.00, category: 'Category 7' },
+    { id: 8, name: 'Product 8', description: 'Description for product 8', price: 80.00, category: 'Category 8' },
+    { id: 9, name: 'Product 9', description: 'Description for product 9', price: 90.00, category: 'Category 9' },
+    { id: 10, name: 'Product 10', description: 'Description for product 10', price: 100.00, category: 'Category 10' },
+    { id: 11, name: 'Product 11', description: 'Description for product 11', price: 110.00, category: 'Category 1' },
+    { id: 12, name: 'Product 12', description: 'Description for product 12', price: 120.00, category: 'Category 2' },
+    { id: 13, name: 'Product 13', description: 'Description for product 13', price: 130.00, category: 'Category 3' },
+    { id: 14, name: 'Product 14', description: 'Description for product 14', price: 140.00, category: 'Category 4' },
+    { id: 15, name: 'Product 15', description: 'Description for product 15', price: 150.00, category: 'Category 5' },
+    { id: 16, name: 'Product 16', description: 'Description for product 16', price: 160.00, category: 'Category 6' },
+    { id: 17, name: 'Product 17', description: 'Description for product 17', price: 170.00, category: 'Category 7' },
+    { id: 18, name: 'Product 18', description: 'Description for product 18', price: 180.00, category: 'Category 8' },
+    { id: 19, name: 'Product 19', description: 'Description for product 19', price: 190.00, category: 'Category 9' },
+    { id: 20, name: 'Product 20', description: 'Description for product 20', price: 200.00, category: 'Category 10' },
+    { id: 21, name: 'Product 21', description: 'Description for product 21', price: 210.00, category: 'Category 1' },
+    { id: 22, name: 'Product 22', description: 'Description for product 22', price: 220.00, category: 'Category 2' },
+    { id: 23, name: 'Product 23', description: 'Description for product 23', price: 230.00, category: 'Category 3' },
+    { id: 24, name: 'Product 24', description: 'Description for product 24', price: 240.00, category: 'Category 4' },
+    { id: 25, name: 'Product 25', description: 'Description for product 25', price: 250.00, category: 'Category 5' },
+    { id: 26, name: 'Product 26', description: 'Description for product 26', price: 260.00, category: 'Category 6' },
+    { id: 27, name: 'Product 27', description: 'Description for product 27', price: 270.00, category: 'Category 7' },
+    { id: 28, name: 'Product 28', description: 'Description for product 28', price: 280.00, category: 'Category 8' },
+    { id: 29, name: 'Product 29', description: 'Description for product 29', price: 290.00, category: 'Category 9' },
+    { id: 30, name: 'Product 30', description: 'Description for product 30', price: 300.00, category: 'Category 10' },
+    { id: 31, name: 'Product 31', description: 'Description for product 31', price: 310.00, category: 'Category 1' },
+    { id: 32, name: 'Product 32', description: 'Description for product 32', price: 320.00, category: 'Category 2' },
+    { id: 33, name: 'Product 33', description: 'Description for product 33', price: 330.00, category: 'Category 3' },
+    { id: 34, name: 'Product 34', description: 'Description for product 34', price: 340.00, category: 'Category 4' },
+    { id: 35, name: 'Product 35', description: 'Description for product 35', price: 350.00, category: 'Category 5' },
+    { id: 36, name: 'Product 36', description: 'Description for product 36', price: 360.00, category: 'Category 6' },
+    { id: 37, name: 'Product 37', description: 'Description for product 37', price: 370.00, category: 'Category 7' },
+    { id: 38, name: 'Product 38', description: 'Description for product 38', price: 380.00, category: 'Category 8' },
+    { id: 39, name: 'Product 39', description: 'Description for product 39', price: 390.00, category: 'Category 9' },
+    { id: 40, name: 'Product 40', description: 'Description for product 40', price: 400.00, category: 'Category 10' },
+    { id: 41, name: 'Product 41', description: 'Description for product 41', price: 410.00, category: 'Category 1' },
+    { id: 42, name: 'Product 42', description: 'Description for product 42', price: 420.00, category: 'Category 2' },
+    { id: 43, name: 'Product 43', description: 'Description for product 43', price: 430.00, category: 'Category 3' },
+    { id: 44, name: 'Product 44', description: 'Description for product 44', price: 440.00, category: 'Category 4' },
+    { id: 45, name: 'Product 45', description: 'Description for product 45', price: 450.00, category: 'Category 5' },
+    { id: 46, name: 'Product 46', description: 'Description for product 46', price: 460.00, category: 'Category 6' },
+    { id: 47, name: 'Product 47', description: 'Description for product 47', price: 470.00, category: 'Category 7' },
+    { id: 48, name: 'Product 48', description: 'Description for product 48', price: 480.00, category: 'Category 8' },
+    { id: 49, name: 'Product 49', description: 'Description for product 49', price: 490.00, category: 'Category 9' },
+    { id: 50, name: 'Product 50', description: 'Description for product 50', price: 500.00, category: 'Category 10' }
+  ];
+
+}

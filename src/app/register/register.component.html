@@ -1,0 +1,14 @@
+<div>
+    <form (ngSubmit)="registerUser(username.value, password.value, role.value)">
+      <input type="text" placeholder="username" #username required autocomplete="username">
+      <input type="password" placeholder="password" #password required autocomplete="current-password">
+      <select #role required>
+        <option value="" disabled selected>Select role</option>
+        <option value="admin">Admin</option>
+        <option value="supervisor">Supervisor</option>
+      </select>
+      <button type="submit">Register</button>
+    </form>
+    <!-- <p>{{status}}</p> -->
+  </div>
+  
